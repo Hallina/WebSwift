@@ -1,5 +1,5 @@
 //
-//  DetailsFav.swift
+//  DetailsRecherche.swift
 //  SwiftProject
 //
 //  Created by m2sar on 10/05/2019.
@@ -9,14 +9,11 @@
 import UIKit
 import Weather
 
-class DetailsFav: UIViewController {
-    @IBOutlet weak var StarButton: UIButton!
+class DetailsRecherche: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
 }

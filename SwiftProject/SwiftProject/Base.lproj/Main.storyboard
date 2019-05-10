@@ -12,8 +12,8 @@
         <!--Item 2-->
         <scene sceneID="rXz-Hy-Ghu">
             <objects>
-                <viewController id="yMa-U8-pNz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zIT-dg-J8p">
+                <viewController id="yMa-U8-pNz" customClass="Recherche" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIT-dg-J8p" userLabel="Recherche">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -45,8 +45,8 @@
         <!--Item 1-->
         <scene sceneID="hFo-2I-xye">
             <objects>
-                <viewController id="2Kg-B1-OeG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EPz-gv-Ne5">
+                <viewController id="2Kg-B1-OeG" customClass="Favori" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EPz-gv-Ne5" userLabel="Favori">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="-1522.488755622189"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Fav-->
         <scene sceneID="S30-8X-kfx">
             <objects>
-                <viewController id="Srw-R1-pkS" sceneMemberID="viewController">
+                <viewController id="Srw-R1-pkS" customClass="DetailsFav" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nK8-6w-BLl" userLabel="DetailsFav">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +115,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Btg-kX-qT5"/>
                     </view>
+                    <connections>
+                        <outlet property="StarButton" destination="P1w-Kx-AWp" id="yPQ-WJ-umm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96T-Cr-V4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,11 +141,11 @@
             </objects>
             <point key="canvasLocation" x="-967" y="-1158"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Recherche-->
         <scene sceneID="jjv-rz-djM">
             <objects>
-                <viewController id="T20-4l-dhN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hf6-cf-9Vu">
+                <viewController id="T20-4l-dhN" customClass="DetailsRecherche" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hf6-cf-9Vu" userLabel="DetailsRecherche">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
