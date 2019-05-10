@@ -11,8 +11,13 @@ import Weather
 
 class DetailsRecherche: UIViewController {
     
+    var query: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let citys = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9").citiesSuggestions(for: query ?? "")
         
         // Do any additional setup after loading the view, typically from a nib.
     }

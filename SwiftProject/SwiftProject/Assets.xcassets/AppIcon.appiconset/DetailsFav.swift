@@ -22,9 +22,10 @@ class DetailsFav: UIViewController {
         let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to delete it from your favorites?", preferredStyle: .alert)
         let clearAction = UIAlertAction(title: "Delete", style: .destructive) { (alert: UIAlertAction!) -> Void in
             self.StarButton.isSelected = false
+            
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (alert: UIAlertAction!) -> Void in
-            print("You pressed Cancel")
+            
         }
         
         if StarButton.isSelected == true{

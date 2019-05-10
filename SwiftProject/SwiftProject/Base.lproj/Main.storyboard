@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Search-->
         <scene sceneID="rXz-Hy-Ghu">
             <objects>
                 <viewController id="yMa-U8-pNz" customClass="Recherche" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,32 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tab2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-jP-gck">
-                                <rect key="frame" x="168" y="79" width="38" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-jP-gck">
+                                <rect key="frame" x="168" y="79" width="54" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-xD-h3M">
-                                <rect key="frame" x="249" y="411" width="74" height="30"/>
+                                <rect key="frame" x="234" y="411" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sous-Tab2"/>
+                                <state key="normal" title="Start a reseach"/>
                                 <connections>
                                     <segue destination="T20-4l-dhN" kind="show" id="B1t-6a-T8h"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJi-rD-sGu">
+                                <rect key="frame" x="15" y="170" width="345" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YXm-Ls-DIf" firstAttribute="trailing" secondItem="CJi-rD-sGu" secondAttribute="trailing" constant="15" id="JuM-9X-Hq9"/>
+                            <constraint firstItem="CJi-rD-sGu" firstAttribute="leading" secondItem="YXm-Ls-DIf" secondAttribute="leading" constant="15" id="eOl-Ua-IKF"/>
+                            <constraint firstItem="CJi-rD-sGu" firstAttribute="top" secondItem="YXm-Ls-DIf" secondAttribute="top" constant="150" id="wC2-EV-atm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YXm-Ls-DIf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Qy4-7Y-Hw2"/>
+                    <tabBarItem key="tabBarItem" title="Search" id="Qy4-7Y-Hw2"/>
+                    <connections>
+                        <outlet property="cityName" destination="CJi-rD-sGu" id="q9w-xg-Uay"/>
+                        <outlet property="searchButton" destination="DRM-xD-h3M" id="wq9-1i-r8F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWt-m5-XPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-16" y="-826"/>
         </scene>
-        <!--Item 1-->
+        <!--Favorite-->
         <scene sceneID="hFo-2I-xye">
             <objects>
                 <viewController id="2Kg-B1-OeG" customClass="Favori" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,8 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tab1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dk-l9-qOd">
-                                <rect key="frame" x="170" y="77" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dk-l9-qOd">
+                                <rect key="frame" x="170" y="77" width="69" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -69,7 +84,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bLh-DI-hOc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="oBM-ez-KTJ"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" id="oBM-ez-KTJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqp-OL-Oeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +197,6 @@
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PSv-ps-SAL"/>
+        <segue reference="ugM-eW-zcy"/>
     </inferredMetricsTieBreakers>
 </document>
