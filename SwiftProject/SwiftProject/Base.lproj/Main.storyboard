@@ -106,6 +106,9 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="Gray_Star.svg.png"/>
                                 <state key="selected" image="Gold_Star.svg.png"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="Srw-R1-pkS" eventType="touchUpInside" id="Ywy-RB-Aol"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
