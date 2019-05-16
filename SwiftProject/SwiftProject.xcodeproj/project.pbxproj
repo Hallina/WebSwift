@@ -25,13 +25,14 @@
 		D631AE4B2285803D00C4078C /* Favori.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631AE4A2285803D00C4078C /* Favori.swift */; };
 		D631AE4C2285803D00C4078C /* Favori.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631AE4A2285803D00C4078C /* Favori.swift */; };
 		D631AE4D2285803D00C4078C /* Favori.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631AE4A2285803D00C4078C /* Favori.swift */; };
+		D66603B5228DA85D00BBD90B /* Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66603B4228DA85D00BBD90B /* Weather.framework */; };
+		D66603B6228DA85D00BBD90B /* Weather.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D66603B4228DA85D00BBD90B /* Weather.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6FD53582281BA5C0047592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD53572281BA5C0047592E /* AppDelegate.swift */; };
 		D6FD535D2281BA5C0047592E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FD535B2281BA5C0047592E /* Main.storyboard */; };
 		D6FD535F2281BA5D0047592E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FD535E2281BA5D0047592E /* Assets.xcassets */; };
 		D6FD53622281BA5D0047592E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FD53602281BA5D0047592E /* LaunchScreen.storyboard */; };
 		D6FD536D2281BA5D0047592E /* SwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD536C2281BA5D0047592E /* SwiftProjectTests.swift */; };
 		D6FD53782281BA5D0047592E /* SwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD53772281BA5D0047592E /* SwiftProjectUITests.swift */; };
-		D6FD539A2281BBB00047592E /* Weather.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6FD53952281BB9C0047592E /* Weather.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,27 +50,6 @@
 			remoteGlobalIDString = D6FD53532281BA5C0047592E;
 			remoteInfo = SwiftProject;
 		};
-		D6FD53942281BB9C0047592E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D6FD538F2281BB9C0047592E /* Weather.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BB73D301228076A8003A8732;
-			remoteInfo = Weather;
-		};
-		D6FD53962281BB9C0047592E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D6FD538F2281BB9C0047592E /* Weather.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BB73D30A228076A8003A8732;
-			remoteInfo = WeatherTests;
-		};
-		D6FD53982281BBAA0047592E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D6FD538F2281BB9C0047592E /* Weather.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BB73D300228076A8003A8732;
-			remoteInfo = Weather;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D6FD539A2281BBB00047592E /* Weather.framework in Embed Frameworks */,
+				D66603B6228DA85D00BBD90B /* Weather.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +73,7 @@
 		D631AE422285802500C4078C /* DetailsRecherche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRecherche.swift; sourceTree = "<group>"; };
 		D631AE462285803000C4078C /* Recherche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recherche.swift; sourceTree = "<group>"; };
 		D631AE4A2285803D00C4078C /* Favori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favori.swift; sourceTree = "<group>"; };
+		D66603B4228DA85D00BBD90B /* Weather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Weather.framework; sourceTree = "<group>"; };
 		D6FD53542281BA5C0047592E /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD53572281BA5C0047592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6FD535C2281BA5C0047592E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,7 +86,6 @@
 		D6FD53732281BA5D0047592E /* SwiftProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD53772281BA5D0047592E /* SwiftProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProjectUITests.swift; sourceTree = "<group>"; };
 		D6FD53792281BA5D0047592E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6FD538F2281BB9C0047592E /* Weather.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Weather.xcodeproj; path = Weather/Weather.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66603B5228DA85D00BBD90B /* Weather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,15 +123,23 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		D681DB9E228DA48100A9EFD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D6FD534B2281BA5C0047592E = {
 			isa = PBXGroup;
 			children = (
-				D6FD538F2281BB9C0047592E /* Weather.xcodeproj */,
+				D66603B4228DA85D00BBD90B /* Weather.framework */,
 				D6FD53562281BA5C0047592E /* SwiftProject */,
 				D6FD536B2281BA5D0047592E /* SwiftProjectTests */,
 				D6FD53762281BA5D0047592E /* SwiftProjectUITests */,
 				D6FD53552281BA5C0047592E /* Products */,
 				D631AE2C2285666900C4078C /* Image */,
+				D681DB9E228DA48100A9EFD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,15 +187,6 @@
 			path = SwiftProjectUITests;
 			sourceTree = "<group>";
 		};
-		D6FD53902281BB9C0047592E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D6FD53952281BB9C0047592E /* Weather.framework */,
-				D6FD53972281BB9C0047592E /* WeatherTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,7 +202,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D6FD53992281BBAA0047592E /* PBXTargetDependency */,
 			);
 			name = SwiftProject;
 			productName = SwiftProject;
@@ -299,12 +278,6 @@
 			mainGroup = D6FD534B2281BA5C0047592E;
 			productRefGroup = D6FD53552281BA5C0047592E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D6FD53902281BB9C0047592E /* Products */;
-					ProjectRef = D6FD538F2281BB9C0047592E /* Weather.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D6FD53532281BA5C0047592E /* SwiftProject */,
@@ -313,23 +286,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D6FD53952281BB9C0047592E /* Weather.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Weather.framework;
-			remoteRef = D6FD53942281BB9C0047592E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D6FD53972281BB9C0047592E /* WeatherTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WeatherTests.xctest;
-			remoteRef = D6FD53962281BB9C0047592E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D6FD53522281BA5C0047592E /* Resources */ = {
@@ -413,11 +369,6 @@
 			isa = PBXTargetDependency;
 			target = D6FD53532281BA5C0047592E /* SwiftProject */;
 			targetProxy = D6FD53742281BA5D0047592E /* PBXContainerItemProxy */;
-		};
-		D6FD53992281BBAA0047592E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Weather;
-			targetProxy = D6FD53982281BBAA0047592E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -17,45 +17,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-jP-gck">
-                                <rect key="frame" x="168" y="79" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-jP-gck">
+                                <rect key="frame" x="160" y="47" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmx-Ve-GYL">
+                                <rect key="frame" x="0.0" y="86" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yMa-U8-pNz" id="99n-lQ-PoV"/>
+                                </connections>
+                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-xD-h3M">
-                                <rect key="frame" x="234" y="411" width="105" height="30"/>
+                                <rect key="frame" x="16" y="38" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start a reseach"/>
                                 <connections>
                                     <segue destination="T20-4l-dhN" kind="show" id="B1t-6a-T8h"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJi-rD-sGu">
-                                <rect key="frame" x="15" y="170" width="345" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-3g-R03">
+                                <rect key="frame" x="0.0" y="142" width="375" height="476"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="v6s-d1-MA0" style="IBUITableViewCellStyleDefault" id="dHl-Qy-9AC">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dHl-Qy-9AC" id="Wh9-5g-IoC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v6s-d1-MA0">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yMa-U8-pNz" id="XFq-NW-nXL"/>
+                                    <outlet property="delegate" destination="yMa-U8-pNz" id="bFE-ob-mOj"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YXm-Ls-DIf" firstAttribute="trailing" secondItem="CJi-rD-sGu" secondAttribute="trailing" constant="15" id="JuM-9X-Hq9"/>
-                            <constraint firstItem="CJi-rD-sGu" firstAttribute="leading" secondItem="YXm-Ls-DIf" secondAttribute="leading" constant="15" id="eOl-Ua-IKF"/>
-                            <constraint firstItem="CJi-rD-sGu" firstAttribute="top" secondItem="YXm-Ls-DIf" secondAttribute="top" constant="150" id="wC2-EV-atm"/>
+                            <constraint firstItem="xmx-Ve-GYL" firstAttribute="top" secondItem="lcd-jP-gck" secondAttribute="bottom" constant="20" id="H7b-Gg-zEf"/>
+                            <constraint firstItem="S4h-3g-R03" firstAttribute="top" secondItem="xmx-Ve-GYL" secondAttribute="bottom" id="Nuz-y4-1P3"/>
+                            <constraint firstItem="xmx-Ve-GYL" firstAttribute="trailing" secondItem="YXm-Ls-DIf" secondAttribute="trailing" id="R4K-pL-HWy"/>
+                            <constraint firstItem="S4h-3g-R03" firstAttribute="trailing" secondItem="YXm-Ls-DIf" secondAttribute="trailing" id="cxt-L2-6HY"/>
+                            <constraint firstItem="S4h-3g-R03" firstAttribute="leading" secondItem="YXm-Ls-DIf" secondAttribute="leading" id="f2A-o4-saB"/>
+                            <constraint firstItem="S4h-3g-R03" firstAttribute="bottom" secondItem="YXm-Ls-DIf" secondAttribute="bottom" id="sH5-J3-0tB"/>
+                            <constraint firstItem="xmx-Ve-GYL" firstAttribute="leading" secondItem="YXm-Ls-DIf" secondAttribute="leading" id="sN8-rU-g3k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YXm-Ls-DIf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="Qy4-7Y-Hw2"/>
                     <connections>
-                        <outlet property="cityName" destination="CJi-rD-sGu" id="q9w-xg-Uay"/>
+                        <outlet property="searchBar" destination="xmx-Ve-GYL" id="nkG-6F-3Qu"/>
                         <outlet property="searchButton" destination="DRM-xD-h3M" id="wq9-1i-r8F"/>
+                        <outlet property="tbView" destination="S4h-3g-R03" id="hBM-MP-Z8G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWt-m5-XPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="-826"/>
+            <point key="canvasLocation" x="-16.800000000000001" y="-826.23688155922048"/>
         </scene>
         <!--Favorite-->
         <scene sceneID="hFo-2I-xye">
@@ -189,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrM-jB-1qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1751" y="-54"/>
+            <point key="canvasLocation" x="-994" y="-43"/>
         </scene>
     </scenes>
     <resources>
