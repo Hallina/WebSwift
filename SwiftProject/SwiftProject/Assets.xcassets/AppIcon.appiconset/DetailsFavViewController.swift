@@ -9,7 +9,7 @@
 import UIKit
 import Weather
 
-class DetailsFav: UIViewController {
+class DetailsFavViewController: UIViewController {
     @IBOutlet weak var StarButton: UIButton!
     
     override func viewDidLoad() {

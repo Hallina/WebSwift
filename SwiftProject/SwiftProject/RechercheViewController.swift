@@ -9,7 +9,7 @@
 import UIKit
 import Weather
 
-class Recherche: UIViewController {
+class RechercheViewController: UIViewController {
     
     //@IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var cityName: UITextField!
@@ -38,15 +38,15 @@ class Recherche: UIViewController {
     
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if let searchDetail = segue.destination as? DetailsRecherche {
-            searchDetail.query = cityName.text
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if let searchDetail = segue.destination as? DetailsRechercheViewController {
+//            searchDetail.query = cityName.text
+//        }
+//    }
 }
 
-extension Recherche: UITableViewDataSource, UITableViewDelegate{
+extension RechercheViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching {
             return citiesName.count
@@ -75,7 +75,7 @@ extension Recherche: UITableViewDataSource, UITableViewDelegate{
     }
 }
 
-extension Recherche: UISearchBarDelegate {
+extension RechercheViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // clean datas
         citiesName.removeAll()

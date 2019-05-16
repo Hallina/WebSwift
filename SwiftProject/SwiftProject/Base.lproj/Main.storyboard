@@ -12,7 +12,7 @@
         <!--Search-->
         <scene sceneID="rXz-Hy-Ghu">
             <objects>
-                <viewController id="yMa-U8-pNz" customClass="Recherche" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yMa-U8-pNz" customClass="RechercheViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zIT-dg-J8p" userLabel="Recherche">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
         <!--Favorite-->
         <scene sceneID="hFo-2I-xye">
             <objects>
-                <viewController id="2Kg-B1-OeG" customClass="Favori" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Kg-B1-OeG" customClass="FavoriViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EPz-gv-Ne5" userLabel="Favori">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="-1522.488755622189"/>
         </scene>
-        <!--Details Fav-->
+        <!--Details Fav View Controller-->
         <scene sceneID="S30-8X-kfx">
             <objects>
-                <viewController id="Srw-R1-pkS" customClass="DetailsFav" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Srw-R1-pkS" customClass="DetailsFavViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nK8-6w-BLl" userLabel="DetailsFav">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="-967" y="-1158"/>
         </scene>
-        <!--Details Recherche-->
+        <!--Details Recherche View Controller-->
         <scene sceneID="jjv-rz-djM">
             <objects>
-                <viewController id="T20-4l-dhN" customClass="DetailsRecherche" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T20-4l-dhN" customClass="DetailsRechercheViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hf6-cf-9Vu" userLabel="DetailsRecherche">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
