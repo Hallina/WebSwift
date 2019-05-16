@@ -6,27 +6,89 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftProject/Recherche.swift"
-            timestampString = "579702295.62249"
+            timestampString = "579711085.945601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "Recherche"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftProject.Recherche.citiesCountry.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SwiftProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
+                  timestampString = "579709599.197282"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftProject.Recherche.citiesCountry.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SwiftProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
+                  timestampString = "579709599.200011"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftProject.Recherche.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SwiftProject.Recherche"
+                  moduleName = "SwiftProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
+                  timestampString = "579709599.202533"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "854">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftProject.Recherche.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SwiftProject.Recherche&gt;"
+                  moduleName = "SwiftProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
+                  timestampString = "579709599.204908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "819">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftProject/Recherche.swift"
-            timestampString = "579702295.623343"
+            timestampString = "579711085.946327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -35,34 +97,64 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftProject.Recherche.cityName.getter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "SwiftProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
+                  timestampString = "579709599.213629"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftProject.Recherche.cityName.setter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "SwiftProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
+                  timestampString = "579709599.216109"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftProject.Recherche.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SwiftProject.Recherche"
                   moduleName = "SwiftProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
-                  timestampString = "579702295.780435"
+                  timestampString = "579709599.218545"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "186">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "188">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SwiftProject.Recherche.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SwiftProject.Recherche&gt;"
                   moduleName = "SwiftProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/m2sar/Documents/DANT/WebSwift/SwiftProject/SwiftProject/Recherche.swift"
-                  timestampString = "579702295.78383"
+                  timestampString = "579709599.221067"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "157">
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "159">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -11,7 +11,7 @@ import Weather
 
 class Recherche: UIViewController {
     
-    @IBOutlet weak var searchButton: UIButton!
+    //@IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var cityName: UITextField!
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -57,9 +57,14 @@ extension Recherche: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "City")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if searching {
-            cell?.textLabel?.text = citiesName[indexPath.row] + " " + citiesCountry[indexPath.row]
+            cell?.textLabel?.text = citiesName[indexPath.row]
+            cell?.detailTextLabel?.text = citiesCountry[indexPath.row]
+        }
+        else {
+            cell?.textLabel?.text = ""
+            cell?.detailTextLabel?.text = ""
         }
         return cell!
     }
@@ -71,7 +76,7 @@ extension Recherche: UITableViewDataSource, UITableViewDelegate{
 }
 
 extension Recherche: UISearchBarDelegate {
-    func searchBarSelect(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // clean datas
         citiesName.removeAll()
         citiesID.removeAll()
@@ -93,6 +98,7 @@ extension Recherche: UISearchBarDelegate {
     
     func searchCities (searchText: String) {
         cities = nil
+        print(searchText)
         if (searchText != ""){
             cities = weatherClient.citiesSuggestions(for: searchText)
         }
