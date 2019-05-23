@@ -189,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="-18.399999999999999" y="-1522.488755622189"/>
         </scene>
-        <!--Details Fav View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="S30-8X-kfx">
             <objects>
-                <viewController id="Srw-R1-pkS" customClass="DetailsFavViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Srw-R1-pkS" customClass="DetailsViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nK8-6w-BLl" userLabel="DetailsFav">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

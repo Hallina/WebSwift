@@ -18,6 +18,7 @@ class RechercheViewController: UIViewController {
     @IBOutlet weak var tbView: UITableView!
     
     var cities: [City]!
+    var activeCity: City?
     let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
     
     var citiesName = [String]()
@@ -38,7 +39,7 @@ class RechercheViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if let searchDetail = segue.destination as? DetailsFavViewController {
+        if let searchDetail = segue.destination as? DetailsViewController {
             searchDetail.query = self.activeCity
         }
     }
@@ -69,6 +70,7 @@ extension RechercheViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         index = indexPath.row
+        activeCity = cities[index]
         performSegue(withIdentifier: "cityWeather", sender: self)
     }
 }
