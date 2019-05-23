@@ -36,14 +36,12 @@ class RechercheViewController: UIViewController {
         //cities = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9").citiesSuggestions(for:  searchBar ?? "")
     }
     
-    
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
-//        if let searchDetail = segue.destination as? DetailsRechercheViewController {
-//            searchDetail.query = cityName.text
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if let searchDetail = segue.destination as? DetailsFavViewController {
+            searchDetail.query = self.activeCity
+        }
+    }
 }
 
 extension RechercheViewController: UITableViewDataSource, UITableViewDelegate{
@@ -71,7 +69,7 @@ extension RechercheViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         index = indexPath.row
-        performSegue(withIdentifier: "segueWeatherCity", sender: self)
+        performSegue(withIdentifier: "cityWeather", sender: self)
     }
 }
 
