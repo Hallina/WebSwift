@@ -10,9 +10,13 @@ import UIKit
 import Weather
 
 class DetailsViewController: UIViewController {
-    
+    let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
     var query: City?
     
+    var iconWeather: UIImage!
+    
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var cityImageView: UIImageView!
     
     @IBOutlet weak var StarButton: UIButton!
     
@@ -20,6 +24,12 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
+        cityLabel.text = query!.name
+        weatherClient.weather(for: query!, completion: { (infoCity) in
+            self.iconWeather = (infoCity?.weather[0].icon ?? nil)!
+        })
+        
+        cityImageView.image = iconWeather
     }
     
     @IBAction func clickButton(_ sender: Any) {

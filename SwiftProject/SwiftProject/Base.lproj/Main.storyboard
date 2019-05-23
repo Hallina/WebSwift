@@ -197,8 +197,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ville" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz2-5A-VWb">
-                                <rect key="frame" x="156" y="40" width="63" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz2-5A-VWb">
+                                <rect key="frame" x="157.5" y="100" width="60.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="kve-bx-7AQ"/>
                                 </constraints>
@@ -226,8 +226,8 @@
                                     <action selector="clickButton:" destination="Srw-R1-pkS" eventType="touchUpInside" id="Ywy-RB-Aol"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-UB-wX5" userLabel="Sky">
-                                <rect key="frame" x="248" y="160" width="60" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-UB-wX5" userLabel="Sky">
+                                <rect key="frame" x="300" y="160" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="DI1-eF-BKi"/>
                                     <constraint firstAttribute="height" constant="60" id="yEd-Sg-W7x"/>
@@ -236,15 +236,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Btg-kX-qT5" firstAttribute="trailing" secondItem="G7z-UB-wX5" secondAttribute="trailing" constant="15" id="0x4-Uu-rsk"/>
                             <constraint firstItem="P1w-Kx-AWp" firstAttribute="top" secondItem="Btg-kX-qT5" secondAttribute="top" constant="10" id="33r-6C-ntk"/>
                             <constraint firstItem="Yz2-5A-VWb" firstAttribute="centerX" secondItem="nK8-6w-BLl" secondAttribute="centerX" id="EYL-zR-XPT"/>
                             <constraint firstItem="Btg-kX-qT5" firstAttribute="trailing" secondItem="P1w-Kx-AWp" secondAttribute="trailing" constant="10" id="Inu-US-Mju"/>
-                            <constraint firstItem="Yz2-5A-VWb" firstAttribute="top" secondItem="Btg-kX-qT5" secondAttribute="top" constant="20" id="eXZ-4v-zQ6"/>
+                            <constraint firstItem="G7z-UB-wX5" firstAttribute="top" secondItem="Btg-kX-qT5" secondAttribute="top" constant="140" id="MG7-rh-GUZ"/>
+                            <constraint firstItem="Yz2-5A-VWb" firstAttribute="top" secondItem="Btg-kX-qT5" secondAttribute="top" constant="80" id="eXZ-4v-zQ6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Btg-kX-qT5"/>
                     </view>
                     <connections>
                         <outlet property="StarButton" destination="P1w-Kx-AWp" id="yPQ-WJ-umm"/>
+                        <outlet property="cityImageView" destination="G7z-UB-wX5" id="dHf-aP-nux"/>
+                        <outlet property="cityLabel" destination="Yz2-5A-VWb" id="ajk-nl-cNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96T-Cr-V4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
