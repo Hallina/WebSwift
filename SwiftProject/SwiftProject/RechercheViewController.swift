@@ -14,9 +14,12 @@ class RechercheViewController: UIViewController {
     //@IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var cityName: UITextField!
     
+    @IBAction func back(_ sender: Any) {
+    }
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tbView: UITableView!
     
+    var page: String = "Search"
     var cities: [City]!
     var activeCity: City?
     let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
@@ -38,9 +41,9 @@ class RechercheViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
         if let searchDetail = segue.destination as? DetailsViewController {
             searchDetail.query = self.activeCity
+            searchDetail.pageToGo = self.page
         }
     }
 }
@@ -98,7 +101,6 @@ extension RechercheViewController: UISearchBarDelegate {
     
     func searchCities (searchText: String) {
         cities = nil
-        print(searchText)
         if (searchText != ""){
             cities = weatherClient.citiesSuggestions(for: searchText)
         }

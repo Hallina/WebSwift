@@ -24,8 +24,6 @@
 		D631AE4B2285803D00C4078C /* FavoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631AE4A2285803D00C4078C /* FavoriViewController.swift */; };
 		D631AE4C2285803D00C4078C /* FavoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631AE4A2285803D00C4078C /* FavoriViewController.swift */; };
 		D631AE4D2285803D00C4078C /* FavoriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631AE4A2285803D00C4078C /* FavoriViewController.swift */; };
-		D6DC64452296EC5800AB22DF /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6DC64442296EC5800AB22DF /* search.svg */; };
-		D6DC64472296EC5D00AB22DF /* star.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6DC64462296EC5C00AB22DF /* star.svg */; };
 		D6DC64492297029900AB22DF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DC64482297029900AB22DF /* DetailsViewController.swift */; };
 		D6FD53582281BA5C0047592E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD53572281BA5C0047592E /* AppDelegate.swift */; };
 		D6FD535D2281BA5C0047592E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FD535B2281BA5C0047592E /* Main.storyboard */; };
@@ -73,8 +71,6 @@
 		D631AE422285802500C4078C /* DetailsRechercheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRechercheViewController.swift; sourceTree = "<group>"; };
 		D631AE462285803000C4078C /* RechercheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechercheViewController.swift; sourceTree = "<group>"; };
 		D631AE4A2285803D00C4078C /* FavoriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriViewController.swift; sourceTree = "<group>"; };
-		D6DC64442296EC5800AB22DF /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = search.svg; sourceTree = "<group>"; };
-		D6DC64462296EC5C00AB22DF /* star.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = star.svg; sourceTree = "<group>"; };
 		D6DC64482297029900AB22DF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D6FD53542281BA5C0047592E /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD53572281BA5C0047592E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +117,6 @@
 			children = (
 				D631AE3B22857DC000C4078C /* Gold_Star.svg.png */,
 				D631AE3A22857DC000C4078C /* Gray_Star.svg.png */,
-				D6DC64462296EC5C00AB22DF /* star.svg */,
-				D6DC64442296EC5800AB22DF /* search.svg */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -296,12 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6DC64452296EC5800AB22DF /* search.svg in Resources */,
 				D6FD53622281BA5D0047592E /* LaunchScreen.storyboard in Resources */,
 				D631AE3F22857DC000C4078C /* Gold_Star.svg.png in Resources */,
 				D6FD535F2281BA5D0047592E /* Assets.xcassets in Resources */,
 				D631AE3C22857DC000C4078C /* Gray_Star.svg.png in Resources */,
-				D6DC64472296EC5D00AB22DF /* star.svg in Resources */,
 				D6FD535D2281BA5C0047592E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

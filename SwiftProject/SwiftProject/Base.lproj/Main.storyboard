@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWt-m5-XPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="-779"/>
+            <point key="canvasLocation" x="46" y="-779"/>
         </scene>
         <!--Favori View Controller-->
         <scene sceneID="hFo-2I-xye">
@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqp-OL-Oeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18.399999999999999" y="-1522.488755622189"/>
+            <point key="canvasLocation" x="46" y="-1540"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="S30-8X-kfx">
@@ -211,7 +211,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="GqN-Q8-K7R" kind="show" id="PSv-ps-SAL"/>
+                                    <action selector="ClickBack:" destination="Srw-R1-pkS" eventType="touchUpInside" id="Tte-Qc-ZI8"/>
+                                    <segue destination="GqN-Q8-K7R" kind="show" id="Ytb-Tt-drZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1w-Kx-AWp" userLabel="Fav">
@@ -253,13 +254,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96T-Cr-V4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055" y="-1158"/>
+            <point key="canvasLocation" x="1053.5999999999999" y="-1158.1709145427287"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--tabBarTest-->
         <scene sceneID="PoY-lC-sLT">
             <objects>
-                <tabBarController id="GqN-Q8-K7R" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="46X-gg-q3q">
+                <tabBarController title="testTabBarController" id="GqN-Q8-K7R" userLabel="tabBarTest" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="46X-gg-q3q" userLabel="TabBarTest">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -273,45 +274,12 @@
             </objects>
             <point key="canvasLocation" x="-967" y="-1158"/>
         </scene>
-        <!--Details Recherche View Controller-->
-        <scene sceneID="jjv-rz-djM">
-            <objects>
-                <viewController id="T20-4l-dhN" customClass="DetailsRechercheViewController" customModule="SwiftProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hf6-cf-9Vu" userLabel="DetailsRecherche">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sous-Tab2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrP-vA-vfn">
-                                <rect key="frame" x="146" y="79" width="83" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Aw-PX-w3X">
-                                <rect key="frame" x="295" y="572" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="GqN-Q8-K7R" kind="show" id="ugM-eW-zcy"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="br4-EO-K8F"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LrM-jB-1qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-994" y="-43"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Gold_Star.svg.png" width="50" height="50"/>
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PSv-ps-SAL"/>
-        <segue reference="YIJ-KN-6MB"/>
+        <segue reference="gXO-6i-yI0"/>
     </inferredMetricsTieBreakers>
 </document>

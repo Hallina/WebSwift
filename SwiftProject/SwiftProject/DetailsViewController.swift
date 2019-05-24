@@ -12,6 +12,7 @@ import Weather
 class DetailsViewController: UIViewController {
     let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
     var query: City?
+    var pageToGo: String?
     
     var iconWeather: UIImage!
     
@@ -29,7 +30,18 @@ class DetailsViewController: UIViewController {
             self.iconWeather = (infoCity?.weather[0].icon ?? nil)!
         })
         
+        usleep(500000)
         cityImageView.image = iconWeather
+    }
+    
+    @IBAction func ClickBack(_ sender: Any) {
+        if pageToGo == "Search"{
+            tabBarController?.selectedIndex = 1
+            
+        }
+        else{
+            tabBarController?.selectedIndex = 0
+        }
     }
     
     @IBAction func clickButton(_ sender: Any) {
