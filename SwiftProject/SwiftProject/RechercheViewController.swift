@@ -19,7 +19,7 @@ class RechercheViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tbView: UITableView!
     
-    var page: String = "Search"
+    //var page: String = "Search"
     var cities: [City]!
     var activeCity: City?
     let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
@@ -37,13 +37,12 @@ class RechercheViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         searchBar.delegate = self
-        //cities = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9").citiesSuggestions(for:  searchBar ?? "")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let searchDetail = segue.destination as? DetailsViewController {
             searchDetail.query = self.activeCity
-            searchDetail.pageToGo = self.page
+            //searchDetail.pageToGo = self.page
         }
     }
 }
