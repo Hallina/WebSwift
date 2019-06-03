@@ -92,6 +92,7 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
                 if elem.identifier != self.query?.identifier {
                     index += 1
                 }
+                else { break }
             }
             self.listFav.remove(at: index)
             self.save(listFav: self.listFav)

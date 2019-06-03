@@ -534,7 +534,8 @@
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AXB-kS-jJO"/>
+        <segue reference="jvt-ZJ-EHy"/>
+        <segue reference="JUr-aD-IZD"/>
         <segue reference="9T9-IA-nhm"/>
     </inferredMetricsTieBreakers>
 </document>
