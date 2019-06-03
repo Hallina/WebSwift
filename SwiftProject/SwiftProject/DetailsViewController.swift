@@ -58,24 +58,26 @@ class DetailsViewController: UIViewController,UITableViewDelegate, UITableViewDa
             }
         }
         StarButton.isSelected = isFav
+        
         let group = DispatchGroup()
         group.enter()
-        weatherClient.weather(for: query!, completion: { (infoCity) in
-            self.iconWeather = (infoCity?.weather[0].icon)!
-            self.tmpTitle = (infoCity?.weather[0].title)!
-            self.tmpDescription = (infoCity?.weather[0].description)!
-            
-            self.tmpTemp = (infoCity?.temperature)!
-            
-            self.tmpData["Maximum"] = (infoCity?.temperatureMax ?? 0.0)!
-            self.tmpData["Minimum"] = (infoCity?.temperatureMin ?? 0.0)!
-            self.tmpData["Humidity"] = (infoCity?.humidity ?? 0.0)!
-            self.tmpData["Clouds coverage"] = (infoCity?.cloudsCoverage ?? 0.0)!
-            self.tmpData["Pressure"] = (infoCity?.pressure ?? 0.0)!
-            self.tmpData["Wind speed"] = (infoCity?.windSpeed ?? 0.0)!
-            self.tmpData["Wind orientation"] = (infoCity?.windOrientation ?? 0.0)!
-            group.leave()
-        })
+        
+            weatherClient.weather(for: query!, completion: { (infoCity) in
+                self.iconWeather = (infoCity?.weather[0].icon)!
+                self.tmpTitle = (infoCity?.weather[0].title)!
+                self.tmpDescription = (infoCity?.weather[0].description)!
+                
+                self.tmpTemp = (infoCity?.temperature)!
+                
+                self.tmpData["Maximum"] = (infoCity?.temperatureMax ?? 0.0)!
+                self.tmpData["Minimum"] = (infoCity?.temperatureMin ?? 0.0)!
+                self.tmpData["Humidity"] = (infoCity?.humidity ?? 0.0)!
+                self.tmpData["Clouds coverage"] = (infoCity?.cloudsCoverage ?? 0.0)!
+                self.tmpData["Pressure"] = (infoCity?.pressure ?? 0.0)!
+                self.tmpData["Wind speed"] = (infoCity?.windSpeed ?? 0.0)!
+                self.tmpData["Wind orientation"] = (infoCity?.windOrientation ?? 0.0)!
+                group.leave()
+            })
         
         group.wait()
         //usleep(500000)

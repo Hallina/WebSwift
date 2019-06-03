@@ -65,6 +65,7 @@ class FavoriViewController: UIViewController, UITableViewDelegate, UITableViewDa
         loaded()
         let favoris = listFav[indexPath.row]
     
+        print(favoris)
         let group = DispatchGroup()
         group.enter()
         weatherClient.weather(for: favoris, completion: { (infoCity) in

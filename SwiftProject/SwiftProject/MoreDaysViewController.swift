@@ -130,6 +130,8 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
             cell.hour.text = "\(tmp)h"
             
             cell.imageWeather.image = prevision[indexPath.row].weather[0].icon ?? nil
+            let temp = Int(roundf(prevision[indexPath.row].temperature))
+            cell.degree.text = "\(temp)°C"
         }
         return cell
     }
@@ -140,6 +142,7 @@ class MoreDaysCell : UITableViewCell{
     @IBOutlet weak var imageWeather: UIImageView!
     @IBOutlet weak var hour: UILabel!
     @IBOutlet weak var day: UILabel!
+    @IBOutlet weak var degree: UILabel!
     
 }
 

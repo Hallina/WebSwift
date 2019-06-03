@@ -144,8 +144,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlX-uY-kIe">
-                                                    <rect key="frame" x="15" y="24" width="58" height="19.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <rect key="frame" x="15" y="25.5" width="55" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -404,15 +404,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
-                                                    <rect key="frame" x="30" y="11.5" width="200" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="200" id="1X6-hJ-LY2"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="giD-eR-i4U">
                                                     <rect key="frame" x="316.5" y="0.0" width="43.5" height="43.5"/>
                                                     <constraints>
@@ -420,25 +411,48 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-F6-7kE">
-                                                    <rect key="frame" x="245" y="11.5" width="56.5" height="21"/>
+                                                    <rect key="frame" x="195" y="11.5" width="44" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="svC-9z-0ki"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-Oq-ukD">
+                                                    <rect key="frame" x="251.5" y="11.5" width="50" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="T50-yj-wcj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
+                                                    <rect key="frame" x="30" y="11.5" width="150" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="wJt-8r-ajy"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="leading" secondItem="F1I-xB-pDF" secondAttribute="leadingMargin" constant="15" id="2TY-Xj-RNR"/>
+                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="leading" secondItem="F1I-xB-pDF" secondAttribute="leadingMargin" constant="15" id="0iV-aM-Ga3"/>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="top" secondItem="F1I-xB-pDF" secondAttribute="top" id="EvA-6L-13U"/>
-                                                <constraint firstItem="giD-eR-i4U" firstAttribute="leading" secondItem="opC-F6-7kE" secondAttribute="trailing" constant="15" id="KcL-gD-PDa"/>
-                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="Vbx-US-bxR"/>
-                                                <constraint firstItem="opC-F6-7kE" firstAttribute="leading" secondItem="CsC-Yc-eyq" secondAttribute="trailing" constant="15" id="dbv-4m-gpd"/>
-                                                <constraint firstItem="opC-F6-7kE" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="hm8-zk-Giy"/>
+                                                <constraint firstItem="opC-F6-7kE" firstAttribute="leading" secondItem="CsC-Yc-eyq" secondAttribute="trailing" constant="15" id="Scv-CG-mX0"/>
+                                                <constraint firstItem="dzj-Oq-ukD" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="gzp-sc-pdK"/>
+                                                <constraint firstItem="giD-eR-i4U" firstAttribute="leading" secondItem="dzj-Oq-ukD" secondAttribute="trailing" constant="15" id="hgj-aS-frY"/>
                                                 <constraint firstAttribute="trailing" secondItem="giD-eR-i4U" secondAttribute="trailing" constant="15" id="nC3-HI-SW8"/>
+                                                <constraint firstItem="opC-F6-7kE" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="oVN-Ph-X6t"/>
                                                 <constraint firstAttribute="bottom" secondItem="giD-eR-i4U" secondAttribute="bottom" id="rir-CV-rWK"/>
+                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="vyW-fM-75J"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="day" destination="CsC-Yc-eyq" id="zBK-rh-Fei"/>
+                                            <outlet property="degree" destination="dzj-Oq-ukD" id="BX3-81-Dlw"/>
                                             <outlet property="hour" destination="opC-F6-7kE" id="PQ7-am-JA6"/>
                                             <outlet property="imageWeather" destination="giD-eR-i4U" id="QHw-te-NSL"/>
                                         </connections>
@@ -515,6 +529,6 @@
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gXO-6i-yI0"/>
+        <segue reference="9T9-IA-nhm"/>
     </inferredMetricsTieBreakers>
 </document>
