@@ -466,6 +466,13 @@
                                     <action selector="clickBack:" destination="WSL-xC-zQB" eventType="touchUpInside" id="gAx-BB-fzd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-4I-2Gz">
+                                <rect key="frame" x="245" y="622" width="115" height="30"/>
+                                <state key="normal" title="Back to favorites"/>
+                                <connections>
+                                    <segue destination="GqN-Q8-K7R" kind="show" id="AXB-kS-jJO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -476,6 +483,7 @@
                             <constraint firstItem="KNw-VA-pNB" firstAttribute="leading" secondItem="VQa-Ql-RRT" secondAttribute="trailing" constant="10" id="HA8-Aw-9fH"/>
                             <constraint firstItem="kTV-Nr-c7z" firstAttribute="leading" secondItem="MXx-98-HDH" secondAttribute="leading" id="IX5-Mt-1BL"/>
                             <constraint firstItem="yiz-kM-J9R" firstAttribute="top" secondItem="kTV-Nr-c7z" secondAttribute="bottom" constant="10" id="MTE-jq-hz8"/>
+                            <constraint firstItem="MXx-98-HDH" firstAttribute="bottom" secondItem="GcW-4I-2Gz" secondAttribute="bottom" constant="15" id="OEP-4R-kYw"/>
                             <constraint firstItem="MXx-98-HDH" firstAttribute="trailing" secondItem="H1N-ze-mcb" secondAttribute="trailing" constant="10" id="Reo-OZ-GS5"/>
                             <constraint firstItem="VQa-Ql-RRT" firstAttribute="leading" secondItem="MXx-98-HDH" secondAttribute="leading" constant="10" id="WJJ-6l-pDh"/>
                             <constraint firstItem="KNw-VA-pNB" firstAttribute="top" secondItem="MXx-98-HDH" secondAttribute="top" constant="10" id="ZdA-wR-pUS"/>
@@ -483,6 +491,7 @@
                             <constraint firstItem="kTV-Nr-c7z" firstAttribute="trailing" secondItem="MXx-98-HDH" secondAttribute="trailing" id="hdi-tv-Ck3"/>
                             <constraint firstItem="AzT-rI-JlP" firstAttribute="centerX" secondItem="XXt-j1-ekz" secondAttribute="centerX" id="mDA-h9-pTn"/>
                             <constraint firstItem="MXx-98-HDH" firstAttribute="bottom" secondItem="yiz-kM-J9R" secondAttribute="bottom" constant="15" id="nsh-fj-8Il"/>
+                            <constraint firstItem="MXx-98-HDH" firstAttribute="trailing" secondItem="GcW-4I-2Gz" secondAttribute="trailing" constant="15" id="oTa-Td-2AC"/>
                             <constraint firstItem="H1N-ze-mcb" firstAttribute="top" secondItem="KNw-VA-pNB" secondAttribute="bottom" constant="50" id="uwb-8r-dgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MXx-98-HDH"/>
@@ -525,6 +534,7 @@
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AXB-kS-jJO"/>
         <segue reference="9T9-IA-nhm"/>
     </inferredMetricsTieBreakers>
 </document>
