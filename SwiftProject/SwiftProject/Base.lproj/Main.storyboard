@@ -400,7 +400,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fi3-7U-Lzm" customClass="MoreDaysCell" customModule="SwiftProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fi3-7U-Lzm" id="F1I-xB-pDF" customClass="HeadLine">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fi3-7U-Lzm" id="F1I-xB-pDF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -410,10 +410,10 @@
                                                         <constraint firstAttribute="width" constant="43.5" id="5Rp-HW-Icq"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-F6-7kE">
-                                                    <rect key="frame" x="192.5" y="11.5" width="44" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-F6-7kE">
+                                                    <rect key="frame" x="188" y="11.5" width="49" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="44" id="svC-9z-0ki"/>
+                                                        <constraint firstAttribute="width" constant="49" id="rDP-mG-CUb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -428,8 +428,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
-                                                    <rect key="frame" x="30" y="12" width="155" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
+                                                    <rect key="frame" x="30" y="11.5" width="135" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -437,9 +437,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="top" secondItem="F1I-xB-pDF" secondAttribute="top" id="EvA-6L-13U"/>
-                                                <constraint firstItem="dzj-Oq-ukD" firstAttribute="leading" secondItem="opC-F6-7kE" secondAttribute="trailing" constant="15" id="Fjp-Za-Sht"/>
                                                 <constraint firstItem="dzj-Oq-ukD" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="gzp-sc-pdK"/>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="leading" secondItem="dzj-Oq-ukD" secondAttribute="trailing" constant="15" id="hgj-aS-frY"/>
+                                                <constraint firstItem="opC-F6-7kE" firstAttribute="leading" secondItem="CsC-Yc-eyq" secondAttribute="trailing" constant="10" id="j4S-wx-gw9"/>
                                                 <constraint firstAttribute="trailing" secondItem="giD-eR-i4U" secondAttribute="trailing" constant="15" id="nC3-HI-SW8"/>
                                                 <constraint firstItem="opC-F6-7kE" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="oVN-Ph-X6t"/>
                                                 <constraint firstAttribute="bottom" secondItem="giD-eR-i4U" secondAttribute="bottom" id="rir-CV-rWK"/>
@@ -448,6 +448,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="day" destination="CsC-Yc-eyq" id="zBK-rh-Fei"/>
+                                            <outlet property="degree" destination="dzj-Oq-ukD" id="WD1-42-KN4"/>
                                             <outlet property="hour" destination="opC-F6-7kE" id="PQ7-am-JA6"/>
                                             <outlet property="imageWeather" destination="giD-eR-i4U" id="QHw-te-NSL"/>
                                         </connections>
