@@ -9,18 +9,15 @@
 import UIKit
 import Weather
 
-class RechercheViewController: UIViewController {
-    
-    //@IBOutlet weak var searchButton: UIButton!
-    @IBOutlet weak var cityName: UITextField!
-    
-    @IBAction func back(_ sender: Any) {
-    }
+class SearchViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tbView: UITableView!
     
-    //var page: String = "Search"
+    let defaults = UserDefaults.standard
+    
     var cities: [City]!
+    var listFav: [City] = []
+    
     var activeCity: City?
     let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
     
@@ -35,19 +32,36 @@ class RechercheViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        
+        loaded()
         searchBar.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let searchDetail = segue.destination as? DetailsViewController {
             searchDetail.query = self.activeCity
-            //searchDetail.pageToGo = self.page
+            searchDetail.listFav = self.listFav
+        }
+    }
+    
+    func save(listFav: [City]){
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(listFav) {
+            defaults.set(encoded, forKey: "SavedFav")
+        }
+    }
+    
+    
+    func loaded(){
+        if let savedFav = defaults.object(forKey: "SavedFav") as? Data {
+            let decoder = JSONDecoder()
+            if let loadedFav = try? decoder.decode([City].self, from: savedFav) {
+                listFav = loadedFav
+            }
         }
     }
 }
 
-extension RechercheViewController: UITableViewDataSource, UITableViewDelegate{
+extension SearchViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching {
             return citiesName.count
@@ -77,7 +91,7 @@ extension RechercheViewController: UITableViewDataSource, UITableViewDelegate{
     }
 }
 
-extension RechercheViewController: UISearchBarDelegate {
+extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // clean datas
         citiesName.removeAll()
@@ -85,7 +99,10 @@ extension RechercheViewController: UISearchBarDelegate {
         citiesCountry.removeAll()
         
         // search from the text entered
-        searchCities(searchText: searchBar.text!)
+        cities = nil
+        if (searchBar.text! != ""){
+            cities = weatherClient.citiesSuggestions(for: searchBar.text!)
+        }
         
         // prepare for table view
         for city in cities {
@@ -95,16 +112,9 @@ extension RechercheViewController: UISearchBarDelegate {
         }
         
         searching = true
-        tbView.reloadData() // reload the tableview
+        tbView.reloadData()
     }
     
-    func searchCities (searchText: String) {
-        cities = nil
-        if (searchText != ""){
-            cities = weatherClient.citiesSuggestions(for: searchText)
-        }
-    }
-
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
         searchBar.text = ""

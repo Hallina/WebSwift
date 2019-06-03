@@ -14,9 +14,12 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var FavButton: UIButton!
     let weatherClient = WeatherClient(key: "9e6d39413722f1a451125d937bf8b5b9")
     var query: City?
+    var listFav: [City] = []
     var isFav: Bool?
     var prevision: [Forecast]!
     var calendar = Calendar.current
+    
+    let defaults = UserDefaults.standard
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var myTB: UITableView!
@@ -48,11 +51,8 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
         group.wait()
         
         weatherClient.forecast(for: query!) { (prevision) in
-            self.prevision = prevision
+            self.prevision = prevision!
         }
-        sleep(1)
-        
-       
         
         cityImageView.image = iconWeather
         temp.text = "\(tmpTemp)°C"
@@ -61,6 +61,7 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let searchDetail = segue.destination as? DetailsViewController {
             searchDetail.query = self.query
+            searchDetail.listFav = self.listFav
             
             if (self.FavButton.isSelected == true) {
                 searchDetail.isFav = true
@@ -68,6 +69,13 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
             else {
                 searchDetail.isFav = false
             }
+        }
+    }
+    
+    func save(listFav: [City]){
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(listFav) {
+            defaults.set(encoded, forKey: "SavedFav")
         }
     }
 
@@ -79,6 +87,13 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
         let alert = UIAlertController(title: "Confirm", message: "Are you sure you want to delete it from your favorites?", preferredStyle: .alert)
         let clearAction = UIAlertAction(title: "Delete", style: .destructive) { (alert: UIAlertAction!) -> Void in
             self.FavButton.isSelected = false
+            var index: Int = 0
+            for elem in self.listFav{
+                if elem.identifier != self.query?.identifier {
+                    index += 1
+                }
+            }
+            self.listFav.remove(at: index)
             
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (alert: UIAlertAction!) -> Void in
@@ -93,10 +108,16 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
         }
         else {
             FavButton.isSelected = true
+            listFav.append(query!)
+            save(listFav: listFav)
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        weatherClient.forecast(for: query!) { (prevision) in
+            self.prevision = prevision!
+        }
+        usleep(500000)
         return prevision.count
     }
     

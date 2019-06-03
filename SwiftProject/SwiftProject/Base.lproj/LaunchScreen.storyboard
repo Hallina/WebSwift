@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Umbrella.png" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-Pe-6gl">
+                                <rect key="frame" x="0.0" y="195" width="375" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EmI-Pe-6gl" secondAttribute="height" multiplier="375:277" id="40s-3d-2II"/>
+                                    <constraint firstAttribute="width" secondItem="EmI-Pe-6gl" secondAttribute="height" multiplier="375:277" id="VVI-Lh-0r4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherMelon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct3-79-ba5">
+                                <rect key="frame" x="0.0" y="81.5" width="375" height="63.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="50"/>
+                                <color key="textColor" red="0.86946243519999999" green="0.13753433100000001" blue="0.15778778639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EmI-Pe-6gl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="265-my-76O"/>
+                            <constraint firstItem="ct3-79-ba5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PcA-9w-iQX"/>
+                            <constraint firstItem="EmI-Pe-6gl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ebF-WX-k8A"/>
+                            <constraint firstItem="EmI-Pe-6gl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gBm-VG-jT7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ct3-79-ba5" secondAttribute="trailing" id="oUT-MH-ey8"/>
+                            <constraint firstItem="EmI-Pe-6gl" firstAttribute="top" secondItem="ct3-79-ba5" secondAttribute="bottom" constant="50" id="sgA-FB-ow7"/>
+                            <constraint firstItem="EmI-Pe-6gl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v8e-nD-RSB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Umbrella.png" width="866" height="720"/>
+    </resources>
 </document>
