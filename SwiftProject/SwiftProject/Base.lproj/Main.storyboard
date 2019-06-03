@@ -411,7 +411,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-F6-7kE">
-                                                    <rect key="frame" x="195" y="11.5" width="44" height="21"/>
+                                                    <rect key="frame" x="192.5" y="11.5" width="44" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="44" id="svC-9z-0ki"/>
                                                     </constraints>
@@ -428,20 +428,16 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
-                                                    <rect key="frame" x="30" y="11.5" width="150" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="wJt-8r-ajy"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
+                                                    <rect key="frame" x="30" y="12" width="155" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="leading" secondItem="F1I-xB-pDF" secondAttribute="leadingMargin" constant="15" id="0iV-aM-Ga3"/>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="top" secondItem="F1I-xB-pDF" secondAttribute="top" id="EvA-6L-13U"/>
-                                                <constraint firstItem="opC-F6-7kE" firstAttribute="leading" secondItem="CsC-Yc-eyq" secondAttribute="trailing" constant="15" id="Scv-CG-mX0"/>
+                                                <constraint firstItem="dzj-Oq-ukD" firstAttribute="leading" secondItem="opC-F6-7kE" secondAttribute="trailing" constant="15" id="Fjp-Za-Sht"/>
                                                 <constraint firstItem="dzj-Oq-ukD" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="gzp-sc-pdK"/>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="leading" secondItem="dzj-Oq-ukD" secondAttribute="trailing" constant="15" id="hgj-aS-frY"/>
                                                 <constraint firstAttribute="trailing" secondItem="giD-eR-i4U" secondAttribute="trailing" constant="15" id="nC3-HI-SW8"/>
@@ -452,7 +448,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="day" destination="CsC-Yc-eyq" id="zBK-rh-Fei"/>
-                                            <outlet property="degree" destination="dzj-Oq-ukD" id="BX3-81-Dlw"/>
                                             <outlet property="hour" destination="opC-F6-7kE" id="PQ7-am-JA6"/>
                                             <outlet property="imageWeather" destination="giD-eR-i4U" id="QHw-te-NSL"/>
                                         </connections>
@@ -470,17 +465,9 @@
                                     <action selector="clickBack:" destination="WSL-xC-zQB" eventType="touchUpInside" id="gAx-BB-fzd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-hN-0fW">
-                                <rect key="frame" x="250" y="622" width="115" height="30"/>
-                                <state key="normal" title="Back to favorites"/>
-                                <connections>
-                                    <segue destination="GqN-Q8-K7R" kind="show" id="vzz-KA-BJD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="MXx-98-HDH" firstAttribute="trailing" secondItem="pKz-hN-0fW" secondAttribute="trailing" constant="10" id="1di-PA-NSP"/>
                             <constraint firstItem="MXx-98-HDH" firstAttribute="trailing" secondItem="KNw-VA-pNB" secondAttribute="trailing" constant="10" id="57z-t7-OVs"/>
                             <constraint firstItem="AzT-rI-JlP" firstAttribute="top" secondItem="VQa-Ql-RRT" secondAttribute="bottom" constant="10" id="CnR-gk-on5"/>
                             <constraint firstItem="yiz-kM-J9R" firstAttribute="leading" secondItem="MXx-98-HDH" secondAttribute="leading" constant="15" id="D33-oH-VHt"/>
@@ -495,7 +482,6 @@
                             <constraint firstItem="kTV-Nr-c7z" firstAttribute="trailing" secondItem="MXx-98-HDH" secondAttribute="trailing" id="hdi-tv-Ck3"/>
                             <constraint firstItem="AzT-rI-JlP" firstAttribute="centerX" secondItem="XXt-j1-ekz" secondAttribute="centerX" id="mDA-h9-pTn"/>
                             <constraint firstItem="MXx-98-HDH" firstAttribute="bottom" secondItem="yiz-kM-J9R" secondAttribute="bottom" constant="15" id="nsh-fj-8Il"/>
-                            <constraint firstItem="MXx-98-HDH" firstAttribute="bottom" secondItem="pKz-hN-0fW" secondAttribute="bottom" constant="15" id="oDF-ph-ZMp"/>
                             <constraint firstItem="H1N-ze-mcb" firstAttribute="top" secondItem="KNw-VA-pNB" secondAttribute="bottom" constant="50" id="uwb-8r-dgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MXx-98-HDH"/>
@@ -538,7 +524,6 @@
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vzz-KA-BJD"/>
         <segue reference="9T9-IA-nhm"/>
     </inferredMetricsTieBreakers>
 </document>

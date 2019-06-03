@@ -94,6 +94,7 @@ class MoreDaysViewController: UIViewController, UITableViewDelegate, UITableView
                 }
             }
             self.listFav.remove(at: index)
+            self.save(listFav: self.listFav)
             
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (alert: UIAlertAction!) -> Void in
