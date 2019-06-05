@@ -43,6 +43,10 @@ class SearchViewController: UIViewController {
         }
     }
     
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        searchBar.endEditing(true)
+    }
+    
     func save(listFav: [City]){
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(listFav) {
