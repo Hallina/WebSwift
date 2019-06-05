@@ -410,15 +410,6 @@
                                                         <constraint firstAttribute="width" constant="43.5" id="5Rp-HW-Icq"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-F6-7kE">
-                                                    <rect key="frame" x="188" y="11.5" width="49" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="49" id="rDP-mG-CUb"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-Oq-ukD">
                                                     <rect key="frame" x="251.5" y="11.5" width="50" height="21"/>
                                                     <constraints>
@@ -428,27 +419,53 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
-                                                    <rect key="frame" x="30" y="11.5" width="135" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-Yc-eyq">
+                                                    <rect key="frame" x="15" y="0.0" width="135" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="135" id="Uih-Jd-J2z"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-bR-VT8">
+                                                    <rect key="frame" x="15" y="22.5" width="200" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="Iq6-va-qDM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opC-F6-7kE">
+                                                    <rect key="frame" x="160" y="11.5" width="49" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="9FZ-5r-Yhm"/>
+                                                        <constraint firstAttribute="width" constant="49" id="rDP-mG-CUb"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="opC-F6-7kE" firstAttribute="leading" secondItem="CsC-Yc-eyq" secondAttribute="trailing" constant="10" id="5Gy-C2-QW5"/>
+                                                <constraint firstItem="opC-F6-7kE" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="AZb-73-6Ar"/>
+                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="leading" secondItem="F1I-xB-pDF" secondAttribute="leading" constant="15" id="Bq2-gY-lC3"/>
+                                                <constraint firstAttribute="bottom" secondItem="yqe-bR-VT8" secondAttribute="bottom" constant="3" id="ChA-D9-f9k"/>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="top" secondItem="F1I-xB-pDF" secondAttribute="top" id="EvA-6L-13U"/>
+                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="top" secondItem="F1I-xB-pDF" secondAttribute="top" id="VxM-Ay-ncC"/>
+                                                <constraint firstItem="yqe-bR-VT8" firstAttribute="leading" secondItem="F1I-xB-pDF" secondAttribute="leading" constant="15" id="X9R-5q-MKv"/>
                                                 <constraint firstItem="dzj-Oq-ukD" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="gzp-sc-pdK"/>
                                                 <constraint firstItem="giD-eR-i4U" firstAttribute="leading" secondItem="dzj-Oq-ukD" secondAttribute="trailing" constant="15" id="hgj-aS-frY"/>
-                                                <constraint firstItem="opC-F6-7kE" firstAttribute="leading" secondItem="CsC-Yc-eyq" secondAttribute="trailing" constant="10" id="j4S-wx-gw9"/>
                                                 <constraint firstAttribute="trailing" secondItem="giD-eR-i4U" secondAttribute="trailing" constant="15" id="nC3-HI-SW8"/>
-                                                <constraint firstItem="opC-F6-7kE" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="oVN-Ph-X6t"/>
                                                 <constraint firstAttribute="bottom" secondItem="giD-eR-i4U" secondAttribute="bottom" id="rir-CV-rWK"/>
-                                                <constraint firstItem="CsC-Yc-eyq" firstAttribute="centerY" secondItem="F1I-xB-pDF" secondAttribute="centerY" id="vyW-fM-75J"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="day" destination="CsC-Yc-eyq" id="zBK-rh-Fei"/>
                                             <outlet property="degree" destination="dzj-Oq-ukD" id="WD1-42-KN4"/>
+                                            <outlet property="desc" destination="yqe-bR-VT8" id="aXr-sS-ilS"/>
                                             <outlet property="hour" destination="opC-F6-7kE" id="PQ7-am-JA6"/>
                                             <outlet property="imageWeather" destination="giD-eR-i4U" id="QHw-te-NSL"/>
                                         </connections>
@@ -534,8 +551,7 @@
         <image name="Gray_Star.svg.png" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jvt-ZJ-EHy"/>
-        <segue reference="JUr-aD-IZD"/>
+        <segue reference="AXB-kS-jJO"/>
         <segue reference="9T9-IA-nhm"/>
     </inferredMetricsTieBreakers>
 </document>

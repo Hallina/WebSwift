@@ -28,7 +28,6 @@ class DetailsViewController: UIViewController,UITableViewDelegate, UITableViewDa
     var Key: [String] = []
     var Value: [Float] = []
     
-    @IBOutlet weak var tableViewDetails: UITableView!
     @IBOutlet weak var weatherTitle: UILabel!
     @IBOutlet weak var weatherDescription: UILabel!
     @IBOutlet weak var temp: UILabel!

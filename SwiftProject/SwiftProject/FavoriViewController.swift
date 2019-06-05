@@ -64,8 +64,7 @@ class FavoriViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = myTableView.dequeueReusableCell(withIdentifier: "cell") as! FavCell
         loaded()
         let favoris = listFav[indexPath.row]
-    
-        print(favoris)
+        
         let group = DispatchGroup()
         group.enter()
         weatherClient.weather(for: favoris, completion: { (infoCity) in
